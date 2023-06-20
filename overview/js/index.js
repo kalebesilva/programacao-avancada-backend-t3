@@ -17,7 +17,7 @@ let x = 10
 if(true){
     // escopo local
     let x = 20
-    console.log(x)
+    console.log(this.x)
 }
 // é incorreto utilizar var depois do EC6
 
@@ -63,7 +63,7 @@ console.log(typeof linguagens[1])
 // são usados quando a necessidade é de representar alguma entidade, como usuário, pessoa, produto
 // possuem notação específica, similar à do JSON
 const user = { 
-    username:'vrc', 
+    username:['vrc','outro nome'], 
     password:'123', 
     name:'Victor',
     age:31
