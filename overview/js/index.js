@@ -63,7 +63,7 @@ console.log(typeof linguagens[1])
 // são usados quando a necessidade é de representar alguma entidade, como usuário, pessoa, produto
 // possuem notação específica, similar à do JSON
 const user = { 
-    username:'vrc', 
+    username:['vrc','outro nome'], 
     password:'123', 
     name:'Victor',
     age:31
