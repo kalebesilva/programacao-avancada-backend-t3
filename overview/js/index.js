@@ -17,7 +17,7 @@ let x = 10
 if(true){
     // escopo local
     let x = 20
-    console.log(x)
+    console.log(this.x)
 }
 // é incorreto utilizar var depois do EC6
 
