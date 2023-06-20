@@ -119,7 +119,7 @@ console.log(chars)
 // objetos literais são utilizados para representar endidades como pessoas, produtos, usuários...
 
 const product = {
-    productName: 'Camisa',
+    productName: 'Camiseta',
     price: 29.99,
     inStock: true,
     size: ['p', 'm', 'g'],
@@ -168,8 +168,8 @@ const dogObject = JSON.parse(dogJson)
 console.log(dogObject)
 
 // caso haja algum erro na sintaxe, não pode ser considerado um JSON válido
-//const jsonErrado = '{"primeiro":"dado1""segundo":222,"terceiro":"dado3}'
-//const jsonErradoObject = JSON.parse(jsonErrado)
+// const jsonErrado = '{"primeiro":"dado1""segundo":222,"terceiro":"dado3}'
+// const jsonErradoObject = JSON.parse(jsonErrado)
 
 // Desafio 1: Armazene 5 dados numéricos em um vetor. Em seguida, copie para um objeto com as propriedades n1, n2, n3, n4 e n5. Utilize destructuring para copiar os valores para 5 variáveis. Construa um objeto JSON com os valores das variáveis.
 
@@ -211,18 +211,18 @@ for(let contador = 0; contador < outraLista.length; contador++)
     console.log(`O elemento da
 vez é ${outraLista[contador]}.`) //template literais, ou template strings: conteúdo entre crases; a quebra de linha no editor de cógidos gera quebra de linha no navegador.
 
+// Desafio relâmpago: escreva o que aparece no log abaixo como template literals.
 const var1 = 5
 const var2 = 10
-const outLiteral = `Quinze é ${(var1+var2)}
-e não ${(2*var1+var2)}.`
-console.log(outLiteral)
+const sumLiteral = 'Quinze é ${(var1+var2)},\n e não ${(2*var1+var2)}.'
+console.log(sumLiteral)
 
 
 
 // métodos de arrays
 // os métodos de arrays esperam funções anônimas como argumentos para responder aos parâmetros
 
-const names = ['Victor','Paulo','Elias','Fabiana']
+const names = ['Victor','Alexandre','Mariana','Paulo']
 
 // forEach percorre um vetor]
 // os métodos para vetores precisam de funções anônimas para auxiliarem na resolução das suas funcionalidades
@@ -285,8 +285,7 @@ function out(){
 }
 */
 
-const testArrow = () => ((x=7), ()=>(x+5))  ()
-console.log(testArrow())
+
 
 // reduzindo o formato de escrita; quando tempos apenas uma propriedade de um objeto sendo utilizada na função anônima, podemos escrever o parâmetro como object literal especificando a propriedade do objeto que será trabalhada e utilizá-la sem que seja necessário escrever o nome do objeto
 const namesLength = names.map( ({length}) => length )
