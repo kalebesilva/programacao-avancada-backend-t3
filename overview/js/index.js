@@ -112,6 +112,12 @@ console.log(chars)
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
 
+function calculator(){
+    const formData = new FormData(document.querySelector('form'))
+    const n1 = parseInt(formData.get('n1'))
+    const n2 = parseInt(formData.get('n2'))
+    console.log(n1+n2)
+}
 
 
 
@@ -136,7 +142,7 @@ console.log(product['main color'])
 
 // desestruturando o objeto product para duas variáveis
 // os nomes precisam ser idênticos aos das propriedades do objeto
-let { productName, price } = product
+let { size, price } = product
 console.log(price)
 price = 30.49
 console.log(price)
@@ -145,7 +151,7 @@ console.log(product.price)
 
 const vector = [3,7,2,45,99]
 // desestruturando um vetor
-let [ v1, v2, ...otherVector] = vector
+let [ v1, v2, ...otherVector ] = vector
 console.log(otherVector)
 
 
@@ -168,7 +174,7 @@ const dogObject = JSON.parse(dogJson)
 console.log(dogObject)
 
 // caso haja algum erro na sintaxe, não pode ser considerado um JSON válido
-// const jsonErrado = '{"primeiro":"dado1""segundo":222,"terceiro":"dado3}'
+// const jsonErrado = '{'primeiro':'dado1','segundo':222,'terceiro':'dado3'}'
 // const jsonErradoObject = JSON.parse(jsonErrado)
 
 // Desafio 1: Armazene 5 dados numéricos em um vetor. Em seguida, copie para um objeto com as propriedades n1, n2, n3, n4 e n5. Utilize destructuring para copiar os valores para 5 variáveis. Construa um objeto JSON com os valores das variáveis.
