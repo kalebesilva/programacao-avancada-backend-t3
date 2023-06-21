@@ -6,60 +6,50 @@ let mult = document.getElementById("mult");
 
 let sub = document.getElementById("sub");
 
-
-function returnSum(a,b) {
-    return Number(a) + Number(b)
-}
 if (soma) {
   soma.addEventListener("click", () => {
     let n1 = document.getElementById("first-number").value;
     let n2 = document.getElementById("second-number").value;
     n1 = parseFloat(n1);
     n2 = parseFloat(n2);
-    console.log(typeof(n1))
+    console.log(typeof n1);
     let result = n1 + n2;
-    document.write("<p>" + result + "</p>")
+    document.write("<p>" + result + "</p>");
   });
 }
 
-
 if (div) {
-    div.addEventListener("click", () => {
-      let n1 = document.getElementById("first-number").value;
-      let n2 = document.getElementById("second-number").value;
-      let p = document.getElementsByClassName("resultado");
-      n1 = parseFloat(n1);
+  div.addEventListener("click", () => {
+    let n1 = document.getElementById("first-number").value;
+    let n2 = document.getElementById("second-number").value;
+    let p = document.getElementsByClassName("resultado");
+    n1 = parseFloat(n1);
     n2 = parseFloat(n2);
-      let result = n1 / n2;
-      document.write("<p>" + result + "</p>")
-    });
-  }
+    let result = n1 / n2;
+    document.write("<p>" + result + "</p>");
+  });
+}
 
-  
-  
 if (mult) {
-    mult.addEventListener("click", () => {
-      let n1 = document.getElementById("first-number").value;
-      let n2 = document.getElementById("second-number").value;
-      let p = document.getElementsByClassName("resultado");
-      n1 = parseFloat(n1);
+  mult.addEventListener("click", () => {
+    let n1 = document.getElementById("first-number").value;
+    let n2 = document.getElementById("second-number").value;
+    let p = document.getElementsByClassName("resultado");
+    n1 = parseFloat(n1);
     n2 = parseFloat(n2);
-      let result = n1 *n2;
-      document.write("<p>" + result + "</p>")
-    });
-  }
+    let result = n1 * n2;
+    document.write("<p>" + result + "</p>");
+  });
+}
 
-  
-  
 if (sub) {
-    sub.addEventListener("click", () => {
-      let n1 = document.getElementById("first-number").value;
-      let n2 = document.getElementById("second-number").value;
-      let p = document.getElementsByClassName("resultado");
-      n1 = parseFloat(n1);
+  sub.addEventListener("click", () => {
+    let n1 = document.getElementById("first-number").value;
+    let n2 = document.getElementById("second-number").value;
+    let p = document.getElementsByClassName("resultado");
+    n1 = parseFloat(n1);
     n2 = parseFloat(n2);
-      let result = n1 - n2;
-     document.write("<p>" + result + "</p>")
-    });
-  }
-  
+    let result = n1 - n2;
+    document.write("<p>" + result + "</p>");
+  });
+}
