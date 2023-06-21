@@ -182,16 +182,26 @@ console.log(dogObject)
 const vetor = [5,7,3,9,10]
 const objetoVetor = {
     n1:vetor[0],
-    n2:vetor[1],...
+    n2:vetor[1],
+    n3:vetor[2],
+    n4:vetor[3],
+    n5:vetor[4]
 }
 const { n1, n2, n3, n4, n5 } = objetoVetor 
+console.log(JSON.stringify({n1,n2,n3,n4,n5}))
 
 // Desafio 2: Desenvolva uma calculadora que armazene em um objeto JSON o resultado das 4 operações básicas. Em outras palavras: crie um objeto calculadora, inicialize cada uma das operações da calculadora (que serão propriedades do objeto) com o resultado do processamento matemático vindo de duas variáveis e converta para um objeto JSON.
+
 const variavel1 = 10, variavel2 = 15
 const objetoCalculadora = {
-    soma: variavel1+variavel2
-    ...
+    sum: variavel1+variavel2,
+    sub: variavel1-variavel2,
+    mult: variavel1*variavel2,
+    div: variavel1/variavel2
 }
+console.log(JSON.stringify(objetoCalculadora))
+
+
 
 // estruturas
 
