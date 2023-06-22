@@ -240,7 +240,8 @@ vez é ${outraLista[contador]}.`) //template literais, ou template strings: cont
 // Desafio relâmpago: escreva o que aparece no log abaixo como template literals.
 const var1 = 5
 const var2 = 10
-const sumLiteral = 'Quinze é ${(var1+var2)},\n e não ${(2*var1+var2)}.'
+const sumLiteral = `Quinze é ${(var1+var2)},
+ e não ${(2*var1+var2)}.`
 console.log(sumLiteral)
 
 
@@ -250,7 +251,7 @@ console.log(sumLiteral)
 
 const names = ['Victor','Alexandre','Mariana','Paulo']
 
-// forEach percorre um vetor]
+// forEach percorre um vetor
 // os métodos para vetores precisam de funções anônimas para auxiliarem na resolução das suas funcionalidades
 names.forEach(function(name){
     console.log(name)
