@@ -402,12 +402,12 @@ console.log(document.getElementById('titulo'))
 
 // seleciona vários elementos pelo nome da classe e cria um array
 const texts = document.querySelectorAll('.text')
-console.log(texts)
+console.log(typeof(texts))
 
 texts.forEach((data) => console.log(data))
 
 // manipula o conteúdo de um elemento
-texts[0].textContent = 'Estou alterando o primeiro parágrafo.'
+texts[0].textContent = 'Estou alterando o título...'
 
 // insere conteúdo (string que pode descrever um HTML) em um elemento
 texts[0].innerHTML = '<span>Testando uma alteração...</span>'
