@@ -422,10 +422,10 @@ texts[2].remove()
 // seleciona um elemento pelo id, armazenando em uma variável
 const button = document.querySelector('#btn')
 // rotina para a execução de alteração no estilo de um elemento a partir do clique
-button.addEventListener('click',()=>(texts[3].style.backgroundColor='orange'))
+button.addEventListener('click',()=>(texts[0].style.backgroundColor='orange'))
 
 // callbacks
 
 // promises
 
-// async - await
+// async - await 
