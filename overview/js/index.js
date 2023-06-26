@@ -402,12 +402,12 @@ console.log(document.getElementById('titulo'))
 
 // seleciona vários elementos pelo nome da classe e cria um array
 const texts = document.querySelectorAll('.text')
-console.log(texts)
+console.log(typeof(texts))
 
 texts.forEach((data) => console.log(data))
 
 // manipula o conteúdo de um elemento
-texts[0].textContent = 'Estou alterando o primeiro parágrafo.'
+texts[0].textContent = 'Estou alterando o título...'
 
 // insere conteúdo (string que pode descrever um HTML) em um elemento
 texts[0].innerHTML = '<span>Testando uma alteração...</span>'
@@ -422,10 +422,10 @@ texts[2].remove()
 // seleciona um elemento pelo id, armazenando em uma variável
 const button = document.querySelector('#btn')
 // rotina para a execução de alteração no estilo de um elemento a partir do clique
-button.addEventListener('click',()=>(texts[3].style.backgroundColor='orange'))
+button.addEventListener('click',()=>(texts[0].style.backgroundColor='orange'))
 
 // callbacks
 
 // promises
 
-// async - await
+// async - await 
