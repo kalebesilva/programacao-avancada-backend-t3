@@ -1,0 +1,17 @@
+    KMDktdMediaToggle=[xs]
+
+        td-data-table-rowDQS
+        Date    setIntervaltd-data-table-cell [numeric]="true"Date
+        sd_card sd_cartdMediaToggle=[sm]
+        Date
+        sd_cartdMediaToggle[fxShow]="Date
+        DateS
+        Date"sd_cartdMediaToggle    
+        DateStd-data-table-cell [numeric]="true"DateStdmatDialogClosetd-data-table-cell [numeric]="[fxShow]="sd_cardSDS"Date
+        Date"
+        DateStdmatDialogClosetdmatTooltipShowDelay="DateStdmatDialogClosetdmatTooltipShowDelay
+        DateS
+        DateStdmatDialogClosetd"sd_card 
+        DateS
+        D
+            
