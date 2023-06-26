@@ -35,6 +35,10 @@ Agora, utilize o método setInterval apenas uma vez no lugar de setTimeout e res
 
 const fs = require('fs')
 console.log('Primeira saída.')
-fs.readFile('./text.txt')
+fs.readFile('./text.txt',callback)
+function callback(err, conteudo){
+    if(err) return console.error(err)
+    console.log(String(conteudo))
+}
 console.log('Segunda saída.')
 console.log('Terceira saída.')
