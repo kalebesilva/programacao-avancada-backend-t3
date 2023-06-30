@@ -1,19 +1,20 @@
-const { EventEmitter } = require("events");
-const memoryStats = require("./stats");
+const { EventEmitter } = require("events"); // importando emitter de events
+const fs = require("fs"); // importando file system
+const path = require("path"); // importando path
 
-const fs = require("fs");
-const path = require("path");
+const emitter = new EventEmitter(); //Cria um novo objeto de evento Emitter
 
-const emitter = new EventEmitter();
-
+//Escuta quando o evento com a string "activateEmitter" será gritado
 emitter.on("activateEmitter", (messaged) => {
-  fs.appendFile(path.join(__dirname, "./log.txt"), messaged, (err) => {
-    if (err) throw err;
+  //utiliza o file system para escrever em um arquivo TXT
+  fs.appendFile(/*utiliza o diretorio absoluto*/path.join(__dirname, "./log.txt"), /*Passa a string para ser escrita no arquivo txt
+  */messaged, (err) => {
+    if (err) throw err; //Trata caso ocorra algum erro.
   });
 });
 
-function activeEmitter(messaged) {
+function activeEmitter(messaged) { // grita uma string "activateEmitter" e uma string 
   emitter.emit("activateEmitter", messaged);
 }
 
-module.exports = activeEmitter;
+module.exports = activeEmitter; // exporta a funcao com modules do node
