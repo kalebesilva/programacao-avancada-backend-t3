@@ -15,17 +15,12 @@ function getUsingMemory(){
 }
 
 function getObjMemory(){
-    return  {
+    return  JSON.stringify({
         total: `${getTotalMemory()} MB`,
         free: `${getFreeMemory()} MB`,
         using: `${getUsingMemory()}%`,
-      };
+      });
 }
 
-function memoryStats() {
-    setInterval(() => {
-        return JSON.stringify(getObjMemory());
-    
-  }, 1000);
-}
-module.exports = memoryStats;
+
+module.exports = getObjMemory;
