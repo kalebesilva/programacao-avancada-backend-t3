@@ -1,5 +1,7 @@
 const os = require("os");
 const { freemem, totalmem } = os;
+const activeEmitter = require('./logger');
+
 
 function getFreeMemory(){
 
@@ -22,5 +24,20 @@ function getObjMemory(){
       };
 }
 
+function showMemoryStatusInTerminal(){
+    console.clear();
+    console.table( getObjMemory());
+    console.log("Running logger");
+}
+setInterval(() => {
+    showMemoryStatusInTerminal();
+    activeEmitter(`${JSON.stringify(getObjMemory())}\n`);
+    
+}, 1000);
 
-module.exports = getObjMemory();
+
+
+
+
+
+
