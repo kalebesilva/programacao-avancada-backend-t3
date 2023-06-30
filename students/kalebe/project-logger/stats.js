@@ -28,4 +28,4 @@ function memoryStats() {
     
   }, 1000);
 }
-module.exports.memoryStats = memoryStats();
+module.exports = memoryStats;
