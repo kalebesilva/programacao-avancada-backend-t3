@@ -424,8 +424,28 @@ const button = document.querySelector('#btn')
 // rotina para a execução de alteração no estilo de um elemento a partir do clique
 button.addEventListener('click',()=>(texts[0].style.backgroundColor='orange'))
 
-// callbacks
+// teste de código assíncrono
 
-// promises
+setTimeout(() => { console.log('esperando 5 segundos para aparecer...') } , 5000)
 
-// async - await 
+console.log('quando isso aparece?')
+
+
+
+// Desafio 04: utilize a classe nativa Date para, dentro de uma função, exibir via console uma string com o dia, mês e ano atual. Em outras palavras: crie uma função sem parâmetros, crie um objeto do tipo Date dentro dela e utilize os métodos getHours, getMinutes e getSeconds para montar uma string com a hora, minuto e segundo. Após a função, acrescente o código setTimeout(nomeDaFuncao, 5000) três vezes. Teste com o comando node ./nomedoarquivo.js via terminal. Perguntas retóricas: o que acontece? Qual o motivo disso acontecer? Agora, utilize o método setInterval apenas uma vez no lugar de setTimeout e responda às mesmas perguntas.
+
+
+// Desafio: Crie um documento HTML com apenas um elemento ul, ou seja, uma lista não ordenada. Em seguida, crie um documento em JavaScript, utilize fetch (é uma API nativa do ES6 para requisições HTTP através de Promises) para pegar o conteúdo da página http://jsonplaceholder.typicode.com/users. Em seguida, dentro do fetch, utilize um then para converter o conteúdo da página para um objeto JSON e outro then para mapear o vetor com os dados do objeto JSON, puxando o nome e email de cada dado para a lista no HTML. Trate também o erro, quando houver. Inicie suas pesquisas para resolver o problema em https://www.devmedia.com.br/javascript-fetch/41206. Métodos do objeto document que podem ser úteis: createElement, textContent, innerHTML, appendChild, querySelector.Métodos de vetor que podem ser úteis: forEach, map
+
+fetch('http://jsonplaceholder.typicode.com/users') // Objeto do JavaScript (ES6) que funciona como uma Promise e trabalha requisições e respostas HTTP.
+    .then((resp) => resp.json()) // Recebendo os dados e convertendo para um JSON.
+    .then(function(dado){ // Recebendo os dados em um Array.
+        return dado.map(function(item){ // Conseguimos varrer o array com o método map.
+            const li = document.createElement('li') // Criando um elemento li.
+            li.innerHTML = `Nome: ${item.name} | Sobrenome: ${item.username}` // Inserindo o elemento no HTML.
+            document.getElementById('nomes').appendChild(li) // Inserindo um nó do tipo li na estrutura do DOM.
+        })
+    })
+    .catch((error) => {
+        console.log('Algo não deu certo: ' + error)
+    })
