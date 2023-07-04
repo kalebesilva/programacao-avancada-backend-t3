@@ -29,10 +29,11 @@ function addElement({ name, url }) {
 
     trash.innerHTML = "x"
     trash.onclick = () => removeElement(trash)
-
+    
+    ul.append(li)
     li.append(a)
     li.append(trash)
-    ul.append(li)
+    
 }
 
 function removeElement(element) {
