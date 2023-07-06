@@ -35,12 +35,10 @@ async function addElementAndSendToApi({ name, url }){
     
     addElement({ name, url })
 
-    // Enviando uma solicitação GET para a API com os parâmetros.
-    const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}`);
+    const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}`)
 
     if (!response.ok) {
-        // Se a resposta da API não for ok (status 200), registre o erro.
-        console.error(`Erro ao enviar os dados para a API: ${response.statusText}`);
+        console.error(`Erro ao enviar os dados para a API: ${response.statusText}`)
     }
 }
 
