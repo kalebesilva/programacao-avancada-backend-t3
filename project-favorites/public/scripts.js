@@ -28,7 +28,20 @@ function addElement({ name, url }) {
     ul.append(li)
     li.append(a)
     li.append(trash)
+
+}
+
+async function addElementAndSendToApi({ name, url }){
     
+    addElement({ name, url })
+
+    // Enviando uma solicitação GET para a API com os parâmetros.
+    const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}`);
+
+    if (!response.ok) {
+        // Se a resposta da API não for ok (status 200), registre o erro.
+        console.error(`Erro ao enviar os dados para a API: ${response.statusText}`);
+    }
 }
 
 function removeElement(element) {
@@ -53,7 +66,7 @@ form.addEventListener('submit', (event) => {
     if (!/^http/.test(url))
         return alert('Digite a url da maneira correta.')
 
-    addElement({ name, url })
+    addElementAndSendToApi({ name, url })
 
     input.value = ''
 
