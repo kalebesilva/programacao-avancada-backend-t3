@@ -37,9 +37,9 @@ async function addElementAndSendToApi({ name, url }){
 
     const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}`)
 
-    if (!response.ok) {
+    if (!response.ok)
         console.error(`Erro ao enviar os dados para a API: ${response.statusText}`)
-    }
+
 }
 
 function removeElement(element) {
