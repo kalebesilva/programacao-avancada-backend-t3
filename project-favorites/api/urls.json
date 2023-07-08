@@ -1,10 +1,6 @@
 {
   "urls": [
     {
-      "name": "Web Academy",
-      "url": "http://webacademy.ufac.br"
-    },
-    {
       "name": "Ufac",
       "url": "http://ufac.br"
     },
@@ -19,6 +15,10 @@
     {
       "name": "Testando",
       "url": "http://teste"
+    },
+    {
+      "name": "testando...",
+      "url": "http"
     }
   ]
 }

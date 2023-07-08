@@ -23,7 +23,7 @@ function addElement({ name, url }) {
     a.target = "_blank"
 
     trash.innerHTML = "x"
-    trash.onclick = () => removeElement(trash)
+    trash.onclick = () => removeElement(trash, { name, url })
     
     ul.append(li)
     li.append(a)
@@ -42,9 +42,16 @@ async function addElementAndSendToApi({ name, url }){
 
 }
 
-function removeElement(element) {
-    if (confirm('Tem certeza que deseja deletar?'))
+async function removeElement(element, { name, url }) {
+    if (confirm('Tem certeza que deseja deletar?')){
         element.parentNode.remove()
+
+        const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}&del=1`)
+
+        if (!response.ok)
+            console.error(`Erro ao enviar os dados para a API: ${response.statusText}`)
+    }
+
 }
 
 form.addEventListener('submit', (event) => {
