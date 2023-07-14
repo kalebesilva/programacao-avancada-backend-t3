@@ -23,17 +23,35 @@ function addElement({ name, url }) {
     a.target = "_blank"
 
     trash.innerHTML = "x"
-    trash.onclick = () => removeElement(trash)
+    trash.onclick = () => removeElement(trash, { name, url })
     
     ul.append(li)
     li.append(a)
     li.append(trash)
-    
+
 }
 
-function removeElement(element) {
-    if (confirm('Tem certeza que deseja deletar?'))
+async function addElementAndSendToApi({ name, url }){
+    
+    addElement({ name, url })
+
+    const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}`)
+
+    if (!response.ok)
+        console.error(`Erro ao enviar os dados para a API: ${response.statusText}`)
+
+}
+
+async function removeElement(element, { name, url }) {
+    if (confirm('Tem certeza que deseja deletar?')){
         element.parentNode.remove()
+
+        const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}&del=1`)
+
+        if (!response.ok)
+            console.error(`Erro ao enviar os dados para a API: ${response.statusText}`)
+    }
+
 }
 
 form.addEventListener('submit', (event) => {
@@ -53,7 +71,7 @@ form.addEventListener('submit', (event) => {
     if (!/^http/.test(url))
         return alert('Digite a url da maneira correta.')
 
-    addElement({ name, url })
+    addElementAndSendToApi({ name, url })
 
     input.value = ''
 
