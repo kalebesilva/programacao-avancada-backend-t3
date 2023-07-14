@@ -1,0 +1,52 @@
+
+body{
+    
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    background-color: #035252;
+    color: #000000;
+}
+
+h1{
+    color: #c1c1c1
+}
+.form  {
+    display: flex;
+    /* size: 2em; */
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 4px;
+    
+  }
+.title-list{
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+.lista{
+    list-style-type: none;
+    display: block;
+    /* size: 2em; */
+    justify-content:center;
+    margin: 2%;  
+    background-color: #024242;
+    background-size: contain;
+    color: #c1c1c1;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+li{
+    margin: 16px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 400px;
+}
+
+input::placeholder {
+    font-family: 'Fira Code';
+    font-size: medium;
+}
+  

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .title-of-page {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+  }
+  
+  .label-nameFavorits, .label-urlfavorits {
+    display: f;
+    margin-top: 20px;
+  }
+  
+  .input {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  table {
+      border-collapse: collapse;
+      width:100%;
+  }
+  
+  th, td {
+      text-align:left;
+      padding:8px
+  }
+  
+  tr:nth-child(even) {background-color:#f2f2f2}
+  

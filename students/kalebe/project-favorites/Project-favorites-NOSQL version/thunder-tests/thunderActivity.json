@@ -1,0 +1,106 @@
+[
+    {
+        "_id": "f4bcd23a-ed54-4615-af06-791785babcc0",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000",
+        "url": "http://localhost:3000",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-07-12T00:02:14.400Z",
+        "modified": "2023-07-12T01:11:26.115Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"name\": \"SimUpdate\",\n  \"url\": \"YES.com\"\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "f6c4892e-a968-439b-83ab-be6503ba411b",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000/",
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-07-12T00:02:26.550Z",
+        "modified": "2023-07-12T01:32:32.947Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "a68d8351-736e-4726-895e-7cf9335ad1c4",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000/",
+        "url": "http://localhost:3000/",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-07-12T01:05:26.408Z",
+        "modified": "2023-07-12T01:05:26.408Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"name\": \"TesteInser\",\n  \"url\": \"TesT.COM\"\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "1694be03-88e2-4c2c-9cb3-49ece7865621",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000/64adfc6521c9fd3025e68676",
+        "url": "http://localhost:3000/64adfc6521c9fd3025e68676",
+        "method": "PUT",
+        "sortNum": 0,
+        "created": "2023-07-12T01:10:47.920Z",
+        "modified": "2023-07-12T01:10:47.920Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"name\": \"SimUpdate\",\n  \"url\": \"YES.com\"\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "1ab2ec7b-7b36-4508-a725-28be44ce2839",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000/64adfc6521c9fd3025e68676",
+        "url": "http://localhost:3000/64adfc6521c9fd3025e68676",
+        "method": "DELETE",
+        "sortNum": 0,
+        "created": "2023-07-12T01:11:18.399Z",
+        "modified": "2023-07-12T01:11:18.399Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"name\": \"SimUpdate\",\n  \"url\": \"YES.com\"\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "2de60a65-7bb4-4ed2-b7ae-249e52f90640",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000/64ada1a95c8ac0efbbd13dc2",
+        "url": "http://localhost:3000/64ada1a95c8ac0efbbd13dc2",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-07-12T01:15:46.017Z",
+        "modified": "2023-07-12T01:28:02.879Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    }
+]
