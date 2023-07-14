@@ -1,5 +1,5 @@
 const os = require("os"); // importando sistema operacional
-const activeEmitter = require("./logger"); // importando funcao de logger, resposavel por emitir um "grito"
+const activeEmitter = require("./logger"); // importando funcao de logger, resposavel por emitir um "grito "
 
 const { freemem, totalmem } = os; //Desistruturacao de OS, pega apenas os métodos que retornam a quantidade de memoria livre e total.
 
