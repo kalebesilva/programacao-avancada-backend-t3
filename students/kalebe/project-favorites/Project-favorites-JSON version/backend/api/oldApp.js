@@ -16,7 +16,7 @@ http
         Mybody += chunk.toString();
       });
 
-      req.on("end", () => {
+      req.on("end", () => { 
         let arrayJson = new Array();
         arrayJson.push(JSON.parse(Mybody));
         arrayJson.push(data);
